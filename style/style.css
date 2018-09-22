@@ -9,8 +9,21 @@ header {
     background-color: #4FC7A2;
 }
 
+.box {
+    display: flex;
+    justify-content: right;
+}
+
+.box div {
+
+}
+
 #logo {
     margin: 10px 0 10px 100px;
     width: 85px;
+}
 
+#basket {
+    margin: 10px 0 10px 100px;
+    width: 85px;
 }
