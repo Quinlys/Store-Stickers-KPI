@@ -9,13 +9,11 @@ header {
     background-color: #4FC7A2;
 }
 
-.box {
+.flex-container {
     display: flex;
-    justify-content: right;
-}
-
-.box div {
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #logo {
@@ -24,6 +22,6 @@ header {
 }
 
 #basket {
-    margin: 10px 0 10px 100px;
+    margin: 10px 100px 10px 0;
     width: 85px;
 }
