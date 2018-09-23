@@ -6,96 +6,94 @@
     <title>Store Stickers KPI</title>
 </head>
 <body>
-<header class="flex-container1">
-    <div class="flex-element">
-        <img src="./img/logo.png" alt="" id="logo">
-    </div>
-    <div class="flex-element">
-        <img src="./img/basket.png" alt="" id="basket" class="text">
-        <h3 id="basketText">Кошик</h3>
-    </div>
-</header>
-<div class="flex-container2">
-    <div class="flex-element first-element">
-        <h2 id="catalog">Каталог товарів</h2>
-        <ul id="menu">
-            <li><a href="#">Cтікери на заказ<img src="./img/arrow.png" alt="" class="arrow1"></a> </li>
-            <li><a href="#">КПІшні стікери<img src="./img/arrow.png" alt="" class="arrow2"></a> </li>
-            <li><a href="#">Стікерпаки<img src="./img/arrow.png" alt="" class="arrow3"></a></li>
-            <li><a href="#">Стікери<img src="./img/arrow.png" alt="" class="arrow4"></a> </li>
-        </ul>
-    </div>
-    <div class="flex-element second-element all">
-        <input checked type="radio" name="respond" id="desktop">
-        <article id="slider">
-            <input checked type="radio" name="slider" id="switch1">
-            <input type="radio" name="slider" id="switch2">
-            <input type="radio" name="slider" id="switch3">
-            <input type="radio" name="slider" id="switch4">
-            <input type="radio" name="slider" id="switch5">
-            <div id="slides">
-                <div id="overflow">
-                    <div class="image">
-                        <article><img src="./img/5.jpg"></article>
-                        <article><img src="./img/4.jpg"></article>
-                        <article><img src="./img/3.jpg"></article>
-                        <article><img src="./img/2.jpg"></article>
-                        <article><img src="./img/1.jpg"></article>
+<div class="wrapper">
+    <header class="flex-container1">
+        <div class="flex-element">
+            <img src="./img/logo.png" alt="" id="logo">
+        </div>
+        <div class="flex-element">
+            <img src="./img/basket.png" alt="" id="basket" class="text">
+            <h3 id="basketText">Кошик</h3>
+        </div>
+    </header>
+    <div class="content">
+        <div class="flex-container2">
+            <div class="flex-element first-element">
+                <h2 id="catalog">Каталог товарів</h2>
+                <ul id="menu">
+                    <li><a href="#">Cтікери на заказ<img src="./img/arrow.png" alt="" class="arrow1"></a> </li>
+                    <li><a href="#">КПІшні стікери<img src="./img/arrow.png" alt="" class="arrow2"></a> </li>
+                    <li><a href="#">Стікерпаки<img src="./img/arrow.png" alt="" class="arrow3"></a></li>
+                    <li><a href="#">Стікери<img src="./img/arrow.png" alt="" class="arrow4"></a> </li>
+                </ul>
+            </div>
+            <div class="flex-element second-element all">
+                <input checked type="radio" name="respond" id="desktop">
+                <article id="slider">
+                    <input checked type="radio" name="slider" id="switch1">
+                    <input type="radio" name="slider" id="switch2">
+                    <input type="radio" name="slider" id="switch3">
+                    <input type="radio" name="slider" id="switch4">
+                    <input type="radio" name="slider" id="switch5">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="image">
+                                <article><img src="./img/5.jpg"></article>
+                                <article><img src="./img/4.jpg"></article>
+                                <article><img src="./img/3.jpg"></article>
+                                <article><img src="./img/2.jpg"></article>
+                                <article><img src="./img/1.jpg"></article>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                        <label for="switch4"></label>
+                        <label for="switch5"></label>
+                    </div>
+                </article>
             </div>
-            <div id="controls">
-                <label for="switch1"></label>
-                <label for="switch2"></label>
-                <label for="switch3"></label>
-                <label for="switch4"></label>
-                <label for="switch5"></label>
+            <div class="flex-element third-element">
+                <h2 id="specialOffer">Special offer</h2>
+                <img src="./img/stickers.png" id="stickers">
+                <img src="./img/price.png" id="price">
+                <button id="btn">У кошик</button>
             </div>
-            <div id="active">
-                <label for="switch1"></label>
-                <label for="switch2"></label>
-                <label for="switch3"></label>
-                <label for="switch4"></label>
-                <label for="switch5"></label>
+        </div>
+        <div class="flex-container3">
+            <div class="flex-elementStickerPack">
+                <img src="./img/stickerPack.png" class="imgStickerPack">
+                <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
+                <button class="btnStickerPack">115 грн</button>
             </div>
-        </article>
+            <div class="flex-elementStickerPack">
+                <img src="./img/stickerPack.png" class="imgStickerPack">
+                <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
+                <button class="btnStickerPack">115 грн</button>
+            </div>
+            <div class="flex-elementStickerPack">
+                <img src="./img/stickerPack.png" class="imgStickerPack">
+                <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
+                <button class="btnStickerPack">115 грн</button>
+            </div>
+            <div class="flex-elementStickerPack">
+                <img src="./img/stickerPack.png" class="imgStickerPack">
+                <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
+                <button class="btnStickerPack">115 грн</button>
+            </div>
+        </div>
     </div>
-    <div class="flex-element third-element">
-        <h2 id="specialOffer">Special offer</h2>
-        <img src="./img/stickers.png" id="stickers">
-        <img src="./img/price.png" id="price">
-        <button id="btn">У кошик</button>
-    </div>
+    <footer class="flex-container4">
+        <div class="flex-element" id="copyright">
+            Copyright © 2018
+        </div>
+        <div class="flex-element">
+            <h4 id="contact">Контактні дані:</h4> <a href="#"><img src="./img/telegramIcon.png" alt="" id="telegramIcon"></a>
+        </div>
+    </footer>
 </div>
-<div class="flex-container3">
-    <div class="flex-elementStickerPack">
-        <img src="./img/stickerPack.png" class="imgStickerPack">
-        <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
-        <button class="btnStickerPack">115 грн</button>
-    </div>
-    <div class="flex-elementStickerPack">
-        <img src="./img/stickerPack.png" class="imgStickerPack">
-        <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
-        <button class="btnStickerPack">115 грн</button>
-    </div>
-    <div class="flex-elementStickerPack">
-        <img src="./img/stickerPack.png" class="imgStickerPack">
-        <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
-        <button class="btnStickerPack">115 грн</button>
-    </div>
-    <div class="flex-elementStickerPack">
-        <img src="./img/stickerPack.png" class="imgStickerPack">
-        <h4><a href="#" class="nameStickerPack">Wolf Sticker Pack</a></h4>
-        <button class="btnStickerPack">115 грн</button>
-    </div>
-</div>
-<footer class="flex-container4">
-    <div class="flex-element" id="copyright">
-        Copyright © 2018
-    </div>
-    <div class="flex-element">
-        <h4 id="contact">Контактні дані:</h4> <a href="#"><img src="./img/telegramIcon.png" alt="" id="telegramIcon"></a>
-    </div>
-</footer>
 </body>
 </html>
