@@ -283,7 +283,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 .flex-elementStickerPack {
-    margin: 0 15px;
+    margin: 40px 15px;
     margin-top: 25px;
     width: 180px;
     height: 230px;
@@ -317,6 +317,41 @@ h4 {
 }
 
 
+/* Flex container 4 */
+
+footer {
+    height: 80px;
+    background-color: #4FC7A2;
+}
+
+#copyright {
+
+}
+
+.flex-container4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex-container4 .flex-element {
+    margin: 30px 100px;
+    width: 300px;
+}
+
+#contact {
+    float: left;
+}
+
+#telegramIcon {
+    margin-left: 25px;
+    border-radius: 5px;
+    width: 20px;
+    height: auto;
+}
+
+
+
 /*                                 АДАПТАЦИИ ПОД ТЕЛЕФОН                           */
 
 /*         Адаптация под iPhone 4          */
@@ -339,7 +374,9 @@ h4 {
 /*         Адаптация под iPhone 6/7/8       */
 
 @media (min-width: 375px) and (max-width: 667px) {
-
+.third-element {
+    display: none;
+}
 }
 
 /* ____________________________________________*/
