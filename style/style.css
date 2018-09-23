@@ -151,7 +151,6 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
-    background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
     float: left;
     margin: 0 0 0 -84px; /*сдвиг влево*/
     display: block;
@@ -165,7 +164,6 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1){
-    background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
     float: right;
     margin: 0 -84px 0 0; /*сдвиг вправо*/
     display: block;
@@ -246,6 +244,120 @@ label, a{ /*при наведении на стрелки или переклю�
 
 #controls label{ /*прозрачность стрелок при отводе курсора*/
     transition: opacity 0.2s ease-out;
+}
+
+/* ***************************** */
+
+
+.flex-container3 {
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-elementStickerPack {
+    margin: 0 15px;
+    margin-top: 25px;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.imgStickerPack {
+    margin: 12px 15px;
+    width: 150px;
+    height: 130px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.nameStickerPack {
+    color: #b2b2b2;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.btnStickerPack {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #B6E6CA;
+    color: white;
+    margin: 10px 15px 30px 90px ;
+}
+
+
+/*                                 АДАПТАЦИИ ПОД ТЕЛЕФОН                           */
+
+/*         Адаптация под iPhone 4          */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+}
+
+/* ________________________________________*/
+
+/*         Адаптация под iPhone 5/SE       */
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+}
+
+/* _________________________________________*/
+
+/*         Адаптация под iPhone 6/7/8       */
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+}
+
+/* ____________________________________________*/
+
+/*         Адаптация под iPhone 6/7/8 Plus     */
+
+@media (min-width: 414px) and (max-width: 736px) {
+
+}
+
+/* _____________________________________*/
+
+/*         Адаптация под iPhone X       */
+
+@media (min-width: 375px) and (max-width: 812px) {
+
+}
+
+/* ____________________________________*/
+
+/*         Адаптация под Galaxy S5     */
+
+@media (min-width: 360px) and (max-width: 640px) {
+
+}
+
+/* _____________________________________*/
+
+/*        Адаптация под планшеты        */
+
+/*          Адаптация под iPad          */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* _____________________________________*/
+
+/*          Адаптация под iPad Pro      */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
 }
 
 
