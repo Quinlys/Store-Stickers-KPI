@@ -86,7 +86,7 @@ a {
     margin-top: 80px;
 }
 
-.flex-container2 .flex-element {
+.flex-container2 {
     margin-top: 35px;
 }
 
@@ -96,7 +96,7 @@ a {
     /*height: 400px;*/
 /*}*/
 
-.third-element {
+#third-element {
     background-color: #ffffff;
     padding: 0 25px 0 25px;
     border-radius: 10px;
@@ -292,7 +292,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .flex-container3 {
     width: 100%;
-    margin-top: 17px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -353,6 +353,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+
 }
 
 .flex-container4 .flex-element {
@@ -371,79 +372,38 @@ footer {
     height: auto;
 }
 
+/* АДАПТАЦИЯ ПОД ТЕЛЕФОН */
 
 
-/*                                 АДАПТАЦИИ ПОД ТЕЛЕФОН                           */
-
-/*         Адаптация под iPhone 4          */
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-
-}
-
-/* ________________________________________*/
-
-/*         Адаптация под iPhone 5/SE       */
-
-@media (min-width: 320px) and (max-width: 568px) {
-
-}
-
-/* _________________________________________*/
-
-/*         Адаптация под iPhone 6/7/8       */
-
-@media (min-width: 375px) and (max-width: 667px) {
-.third-element {
-    display: none;
-}
-}
-
-/* ____________________________________________*/
-
-/*         Адаптация под iPhone 6/7/8 Plus     */
-
-@media (min-width: 414px) and (max-width: 736px) {
+@media (min-width:900px) and (max-width:1300px) {
+    #third-element{
+        display:none;
+    }
+    .first-element {
+        height: 410px;
+        margin-top: 10px;
+    }
+    .flex-elementStickerPack {
+        width: 400px;
+        height: 500px;
+    }
+    .imgStickerPack {
+        width: 350px;
+        height: 310px;
+        margin: 25px;
+    }
+    .nameStickerPack {
+        font-size: 35px;
+        margin-left: 35px;
+    }
+    .btnStickerPack {
+        width: 150px;
+        height: 50px;
+        margin-left: 220px;
+        font-size: 35px;
+    }
 
 }
-
-/* _____________________________________*/
-
-/*         Адаптация под iPhone X       */
-
-@media (min-width: 375px) and (max-width: 812px) {
-
-}
-
-/* ____________________________________*/
-
-/*         Адаптация под Galaxy S5     */
-
-@media (min-width: 360px) and (max-width: 640px) {
-
-}
-
-/* _____________________________________*/
-
-/*        Адаптация под планшеты        */
-
-/*          Адаптация под iPad          */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-}
-
-/* _____________________________________*/
-
-/*          Адаптация под iPad Pro      */
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-
-}
-
-
-
 
 
 
