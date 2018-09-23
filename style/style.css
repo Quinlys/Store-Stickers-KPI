@@ -86,6 +86,28 @@ a {
     width: 230px;
 }
 
+#price{
+    margin-top: 20px;
+    width: 60%;
+    float: left;
+}
+
+#stickers{
+    margin-top: 40px;
+    width: 100%;
+}
+
+#btn{
+    margin-top: 40px;
+    width: 40%;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: #C6EAD4;
+    font-size: 20px;
+    color: white;
+}
+
 #specialOffer {
     color: #9fa8a6;
     text-align: center;
