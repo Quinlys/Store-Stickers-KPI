@@ -45,14 +45,14 @@ a {
 }
 
 #text {
-    margin: 50px 0 0 250px;
+    margin: 40px 0 0 15%;
     float: left;
     text-decoration: underline;
     font-size: 51px;
 }
 
 #price {
-    margin: 55px 0 0 200px;
+    margin: 55px 0 0 5x%;
     font-size: 36px;
 }
 
@@ -64,7 +64,7 @@ a {
 }
 
 #buybtn {
-    margin: 50px 250px 0 0;
+    margin: 50px 26.2% 0 0;
     width: 186px;
     height: 71px;
     border: none;
@@ -80,3 +80,32 @@ a {
 
 }
 
+.flex-container3{
+    margin-left: 18%;
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-elementSticker {
+    margin: 15px 10px;
+    margin-top: 0px;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media (min-width:900px) and (max-width:1300px) {
+    .third-container{
+        width: 100%;
+    }
+
+    .third-element{
+        ;
+    }
+
+}
