@@ -103,6 +103,26 @@ a {
     width: 230px;
 }
 
+#third-element .img1 #stickers {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 20px 20px
+}
+
+
+#third-element .img1 img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+#third-element .img1 img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
 #price{
     margin-top: 20px;
     margin-bottom: 15px;
@@ -308,11 +328,45 @@ label, a{ /*при наведении на стрелки или переклю�
     background-color: white;
 }
 
+/* TREST */
+
+
+
+/* Styles for zoom StickerPack */
+
+.img {
+    overflow:hidden;
+    width: 150px;
+    height:130px;
+    margin: 12px 15px;
+}
+
+.img img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* THE END of ZOOM */
+
+
 .imgStickerPack {
+    overflow: hidden;
     margin: 12px 15px;
     width: 150px;
     height: 130px;
 }
+
+
+
+/* TEST */
 
 h4 {
     margin: 0;
