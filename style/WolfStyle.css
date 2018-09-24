@@ -31,6 +31,7 @@ a {
 #basket {
     margin: 10px 100px 0 0;
     width: 65px;
+    cursor: pointer;
 }
 
 #basketText {
@@ -44,35 +45,36 @@ a {
     justify-content: space-between;
 }
 
-#text {
+.flex-container2 #text {
     margin: 40px 0 0 15%;
     float: left;
     text-decoration: underline;
     font-size: 51px;
 }
 
-#price {
-    margin: 55px 0 0 5x%;
+.flex-container2 #price {
+    margin: 55px 0 0 5%;
     font-size: 36px;
 }
 
-#price span {
+.flex-container2 #price span {
     float: right;
     font-size: 14px;
     color: #FF9A9A;
     text-decoration: underline solid #FF9A9A;
 }
 
-#buybtn {
+.flex-container2 #buybtn {
     margin: 50px 26.2% 0 0;
     width: 186px;
     height: 71px;
     border: none;
     border-radius: 15px;
     background: #7ED6B1;
+    cursor: pointer;
 }
 
-#buybtn span {
+.flex-container2 #buybtn span {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
@@ -85,7 +87,6 @@ a {
     width: 60%;
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -94,18 +95,106 @@ a {
     margin: 15px 10px;
     margin-top: 0px;
     width: 180px;
-    height: 230px;
+    height: 240px;
     border-radius: 8px;
     background-color: white;
 }
 
+.flex-elementSticker img{
+    margin: 20px 0 0 14px;
+    width: 150px;
+    height: 130px;
+}
+
+.flex-elementSticker .name{
+    margin: 0 0 0 15px;
+    font-size: 22px;
+    color: #A7A7A7;
+}
+
+.flex-elementSticker .price{
+    margin: 15px 0 0 12%;
+    font-size: 20px;
+    color: #ffffff;
+    background: #70EAD7;
+    border-radius: 25px;
+    width: 140px;
+    height: 35px;
+}
+
+.flex-elementSticker .price span{
+    margin: 15px 0 0 20px;
+}
+
 @media (min-width:900px) and (max-width:1300px) {
-    .third-container{
+    #logo{
+        width: 150px;
+    }
+
+    #basket{
+        width: 120px;
+    }
+
+    #basketText{
+        margin: 0 0 10px 0;
+        font-size: 40px;
+    }
+
+    .flex-container3{
+        margin: 20px 0 10px 0;
         width: 100%;
     }
 
-    .third-element{
-        ;
+    .flex-elementSticker{
+        width: 400px;
+        height: 520px;
+        border-radius: 15px;
     }
 
+    .flex-container2 #text{
+        margin: 40px 0 0 100px;
+        font-size: 70px;
+    }
+
+    .flex-container2 #price{
+        margin: 20px 0 20px 100px;
+        font-size: 70px;
+    }
+
+    .flex-container2 #price span{
+        font-size:50px;
+    }
+
+    .flex-container2 #buybtn{
+        margin: 0 0 10px 80px;
+        width: 820px;
+        height: 200px;
+    }
+
+    .flex-container2 #buybtn span{
+        font-size: 100px;
+    }
+
+    .flex-elementSticker img{
+        margin: 40px 0 0 25px;
+        width: 350px;
+        height: 310px;
+    }
+
+    .flex-elementSticker .name{
+        margin: 0 0 0 15px;
+        font-size: 40px;
+        color: #A7A7A7 ;
+    }
+
+    .flex-elementSticker .price {
+        margin: 15px 0 0 12%;
+        font-size: 55px;
+        width: 280px;
+        height: 70px;
+    }
+
+    .flex-elementSticker .price span{
+        margin: 15px 0 0 20px;
+    }
 }
