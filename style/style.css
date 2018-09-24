@@ -334,6 +334,11 @@ label, a{ /*при наведении на стрелки или переклю�
 
 /* Styles for zoom StickerPack */
 
+.flex-elementStickerPack .img img {
+    width: 150px;
+    height: 130px;
+}
+
 .img {
     overflow:hidden;
     width: 150px;
@@ -440,12 +445,20 @@ footer {
     .flex-elementStickerPack {
         width: 400px;
         height: 500px;
+        border-radius: 15px;
     }
-    .imgStickerPack {
+    .flex-elementStickerPack .img img{
+        width: 300px;
+        height: 275px;
+        margin: 25px;
+    }
+
+    .flex-elementStickerPack .img {
         width: 350px;
         height: 310px;
         margin: 25px;
     }
+
     .nameStickerPack {
         font-size: 35px;
         margin-left: 35px;
@@ -456,11 +469,7 @@ footer {
         margin-left: 220px;
         font-size: 35px;
     }
-
 }
-
-
-
 
 
 
