@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #C6EAD4;
+    background-color: #9c9c9c;
     color: white;
 }
 
 header {
-    background-color: #4FC7A2;
+    background-color: #3c3c3c;
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 }
 
 .first-element {
-    background-color: #9bc7b0;
+    background-color: #353535;
     padding: 0 25px 0 25px;
     border-radius: 10px;
     width: 230px;
@@ -105,7 +105,7 @@ a {
     height: 45px;
     border: none;
     border-radius: 8px;
-    background: #C6EAD4;
+    background: #4d4d4d;
     font-size: 20px;
     color: white;
 }
@@ -311,7 +311,7 @@ h4 {
     width: 70px;
     height: 35px;
     border-radius: 5px;
-    background-color: #B6E6CA;
+    background-color: #585858;
     color: white;
     margin: 10px 15px 30px 90px ;
 }
@@ -321,7 +321,7 @@ h4 {
 
 footer {
     height: 80px;
-    background-color: #4FC7A2;
+    background-color: #2d2d2d;
 }
 
 #copyright {
