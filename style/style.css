@@ -1,16 +1,9 @@
-
-html,
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-color: #C6EAD4;
     color: white;
-}
-
-label {
-    display: none;
 }
 
 header {
@@ -20,19 +13,6 @@ header {
 a {
     text-decoration: none;
     color: white;
-}
-
-button {
-    outline:none;
-}
-
-.wrapper {
-    position: relative;
-    min-height: 100%;
-}
-
-.content {
-    padding-bottom: 90px;
 }
 
 .flex-container1 {
@@ -89,7 +69,7 @@ button {
     margin-top: 80px;
 }
 
-.flex-container2 {
+.flex-container2 .flex-element {
     margin-top: 35px;
 }
 
@@ -99,32 +79,12 @@ button {
     /*height: 400px;*/
 /*}*/
 
-#third-element {
+.third-element {
     background-color: #ffffff;
     padding: 0 25px 0 25px;
     border-radius: 10px;
     width: 230px;
 }
-
-#third-element .img1 #stickers {
-    width: 200px;
-    height: 200px;
-    margin: 20px 0 20px 20px
-}
-
-
-#third-element .img1 img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-#third-element .img1 img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
 
 #price{
     margin-top: 20px;
@@ -208,7 +168,19 @@ article img{ /*размер изображений слайдера*/
     max-width: 700px; /*максимальнная длинна*/
 }
 
-
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+    float: left;
+    margin: 0 0 0 -84px; /*сдвиг влево*/
+    display: block;
+    height: 68px;
+    width: 68px;
+}
 
 /*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2),
@@ -223,6 +195,9 @@ article img{ /*размер изображений слайдера*/
     width: 68px;
 }
 
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+    cursor: pointer;
+}
 
 .all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
     display: none;
@@ -264,7 +239,7 @@ article img{ /*размер изображений слайдера*/
 }
 
 #active{ /*расположение блока с переключателями*/
-    margin: 3% 0 0;
+    margin: 23% 0 0;
     text-align: center;
 }
 
@@ -300,7 +275,7 @@ article img{ /*размер изображений слайдера*/
 
 .flex-container3 {
     width: 100%;
-    margin: auto;
+    margin-top: 17px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -316,50 +291,11 @@ article img{ /*размер изображений слайдера*/
     background-color: white;
 }
 
-/* TREST */
-
-
-
-/* Styles for zoom StickerPack */
-
-.flex-elementStickerPack .img img {
-    width: 150px;
-    height: 130px;
-}
-
-.img {
-    overflow:hidden;
-    width: 150px;
-    height:130px;
-    margin: 12px 15px;
-}
-
-.img img {
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-}
-
-.img img:hover{
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
-
-/* THE END of ZOOM */
-
-
 .imgStickerPack {
-    overflow: hidden;
     margin: 12px 15px;
     width: 150px;
     height: 130px;
 }
-
-
-
-/* TEST */
 
 h4 {
     margin: 0;
@@ -384,10 +320,6 @@ h4 {
 /* Flex container 4 */
 
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     height: 80px;
     background-color: #4FC7A2;
 }
@@ -400,7 +332,6 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-
 }
 
 .flex-container4 .flex-element {
@@ -419,45 +350,82 @@ footer {
     height: auto;
 }
 
-/* АДАПТАЦИЯ ПОД ТЕЛЕФОН */
 
 
-@media (min-width:900px) and (max-width:1300px) {
-    #third-element{
-        display:none;
-    }
-    .first-element {
-        height: 410px;
-        margin-top: 10px;
-    }
-    .flex-elementStickerPack {
-        width: 400px;
-        height: 500px;
-        border-radius: 15px;
-    }
-    .flex-elementStickerPack .img img{
-        width: 300px;
-        height: 275px;
-        margin: 25px;
-    }
+/*                                 АДАПТАЦИИ ПОД ТЕЛЕФОН                           */
 
-    .flex-elementStickerPack .img {
-        width: 350px;
-        height: 310px;
-        margin: 25px;
-    }
+/*         Адаптация под iPhone 4          */
 
-    .nameStickerPack {
-        font-size: 35px;
-        margin-left: 35px;
-    }
-    .btnStickerPack {
-        width: 150px;
-        height: 50px;
-        margin-left: 220px;
-        font-size: 35px;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+
+
 }
+
+/* ________________________________________*/
+
+/*         Адаптация под iPhone 5/SE       */
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+}
+
+/* _________________________________________*/
+
+/*         Адаптация под iPhone 6/7/8       */
+
+@media (min-width: 375px) and (max-width: 667px) {
+.third-element {
+    display: none;
+}
+}
+
+/* ____________________________________________*/
+
+/*         Адаптация под iPhone 6/7/8 Plus     */
+
+@media (min-width: 414px) and (max-width: 736px) {
+
+}
+
+/* _____________________________________*/
+
+/*         Адаптация под iPhone X       */
+
+@media (min-width: 375px) and (max-width: 812px) {
+
+}
+
+/* ____________________________________*/
+
+/*         Адаптация под Galaxy S5     */
+
+@media (min-width: 360px) and (max-width: 640px) {
+
+}
+
+/* _____________________________________*/
+
+/*        Адаптация под планшеты        */
+
+/*          Адаптация под iPad          */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* _____________________________________*/
+
+/*          Адаптация под iPad Pro      */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+
+}
+
+
+
+
+
+
 
 
 
