@@ -1,5 +1,4 @@
 
-
 html,
 body {
     height: 100%;
@@ -21,6 +20,10 @@ header {
 a {
     text-decoration: none;
     color: white;
+}
+
+button {
+    outline:none;
 }
 
 .wrapper {
@@ -205,19 +208,7 @@ article img{ /*размер изображений слайдера*/
     max-width: 700px; /*максимальнная длинна*/
 }
 
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #controls label:nth-child(5),
-#switch2:checked ~ #controls label:nth-child(1),
-#switch3:checked ~ #controls label:nth-child(2),
-#switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
-    float: left;
-    margin: 0 0 0 -84px; /*сдвиг влево*/
-    display: block;
-    height: 68px;
-    width: 68px;
-}
+
 
 /*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2),
@@ -232,9 +223,6 @@ article img{ /*размер изображений слайдера*/
     width: 68px;
 }
 
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-    cursor: pointer;
-}
 
 .all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
     display: none;
@@ -276,7 +264,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active{ /*расположение блока с переключателями*/
-    margin: 4% 0 0;
+    margin: 3% 0 0;
     text-align: center;
 }
 
@@ -347,9 +335,9 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 .img img {
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
 }
 
 .img img:hover{
