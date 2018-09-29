@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #C6EAD4;
+    background-color: #909090;
     color: white;
 }
 
@@ -11,7 +11,7 @@ button {
 }
 
 header {
-    background-color: #4FC7A2;
+    background-color: #4D4D4D;
 }
 
 a {
@@ -74,11 +74,12 @@ a {
     height: 71px;
     border: none;
     border-radius: 15px;
-    background: #7ED6B1;
+    background: #4D4D4D;
     cursor: pointer;
 }
 
 .flex-container2 #buybtn span {
+    margin: 5px 0 0 10px;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
@@ -120,7 +121,7 @@ a {
     margin: 8px 0 0 10px   ;
     font-size: 20px;
     color: #ffffff;
-    background: #70EAD7;
+    background: #24c3ba;
     border-radius: 25px;
     width: 140px;
     height: 35px;
@@ -216,13 +217,31 @@ span {
     }
 
     .flex-elementSticker .price {
-        margin: 15px 0 0 20px   ;
+        margin: 15px 0 0 0;
         font-size: 55px;
         width: 340px;
         height: 70px;
+        border-radius: 35px;
     }
 
     .flex-elementSticker .price span{
-        margin: 15px 0 0 20px;
+        margin: 0 0 0 20px;
+    }
+
+    .buy {
+        background-color: #70EAD7;
+        width: 70px;
+        height: 70px;
+        margin: 0 0 0 120px;
+        border-radius: 35px;
+        border: 0;
+        padding: 0;
+
+    }
+
+    .buy img {
+        width: 70px;
+        height: 70px;
+        margin: 0;
     }
 }
