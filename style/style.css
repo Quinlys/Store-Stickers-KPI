@@ -93,10 +93,6 @@ a {
     float: left;
 }
 
-#stickers{
-    margin-top: 40px;
-    width: 100%;
-}
 
 #btn{
     margin-top: 40px;
@@ -115,6 +111,34 @@ a {
     text-align: center;
 }
 
+/* ///////////////////////////// Стили для Special Offer ( Анимация приближения ) \\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+.specialOfferImg {
+    overflow:hidden;
+    width: 250px;
+    height:230px;
+}
+
+.specialOfferImg img {
+    width: 250px;
+    height: 230px;
+}
+
+.specialOfferImg img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.specialOfferImg img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* ///////////////////////////// Стили для Special Offer ( Анимация приближения ) \\\\\\\\\\\\\\\\\\\\\\\ */
 .arrow1 {
     width: 25px;
     margin-left: 20px;
@@ -262,15 +286,41 @@ label, a{ /*при наведении на стрелки или переклю�
     transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-    opacity: 0.6;
-}
-
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-    transition: opacity 0.2s ease-out;
-}
-
 /* ***************************** */
+
+
+
+
+
+
+/* ///////////////  ЕФЕКТ ПРИБЛИЖЕНИЯ ПРИ НАВЕДЕНИИ КУРСОРА для СТИКЕРПАКОВ \\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.imgStickerPack {
+    margin: 12px 15px;
+    overflow:hidden;
+    width: 150px;
+    height:130px;
+}
+
+.imgStickerPack img {
+    width: 150px;
+    height:130px;
+}
+
+.imgStickerPack img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.imgStickerPack img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* ///////////////  ЕФЕКТ ПРИБЛИЖЕНИЯ ПРИ НАВЕДЕНИИ КУРСОРА ||| КОНЕЦ \\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 
 .flex-container3 {
@@ -291,11 +341,11 @@ label, a{ /*при наведении на стрелки или переклю�
     background-color: white;
 }
 
-.imgStickerPack {
-    margin: 12px 15px;
-    width: 150px;
-    height: 130px;
-}
+/*.imgStickerPack {*/
+    /*margin: 12px 15px;*/
+    /*width: 150px;*/
+    /*height: 130px;*/
+/*}*/
 
 h4 {
     margin: 0;
