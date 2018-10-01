@@ -50,6 +50,7 @@ a {
 }
 
 .flex-container2 #text {
+    cursor: default;
     margin: 40px 0 0 15%;
     float: left;
     text-decoration: underline;
@@ -57,6 +58,7 @@ a {
 }
 
 .flex-container2 #price {
+    cursor: default;
     margin: 55px 0 0 5%;
     font-size: 36px;
 }
@@ -149,6 +151,7 @@ span {
 }
 
 .buy img {
+    cursor: pointer;
     width: 35px;
     height: 35px;
     margin: 0;
@@ -260,13 +263,13 @@ footer {
     }
 
     .flex-elementSticker .name{
-        margin: 0 0 0 15px;
+        margin: 0 0 0 8%;
         font-size: 40px;
         color: #A7A7A7 ;
     }
 
     .flex-elementSticker .price {
-        margin: 15px 0 0 0;
+        margin: 15px 0 0 8%;
         font-size: 55px;
         width: 340px;
         height: 70px;
