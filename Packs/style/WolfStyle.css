@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     background-color: #909090;
     color: white;
+    font-family: Noteworthy;
 }
 
 button {
@@ -24,6 +25,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: Arial;
 }
 
 #logo {
@@ -53,7 +55,6 @@ a {
     cursor: default;
     margin: 40px 0 0 15%;
     float: left;
-    text-decoration: underline;
     font-size: 51px;
 }
 
@@ -67,10 +68,10 @@ a {
     float: right;
     font-size: 14px;
     color: #FF9A9A;
-    text-decoration: underline solid #FF9A9A;
 }
 
 .flex-container2 #buybtn {
+    font-family: Noteworthy;
     margin: 50px 26.2% 0 0;
     width: 186px;
     height: 71px;
@@ -81,7 +82,7 @@ a {
 }
 
 .flex-container2 #buybtn span {
-    margin: 5px 0 0 10px;
+    margin: 5px 0 0 23px;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
@@ -114,7 +115,7 @@ a {
 }
 
 .flex-elementSticker .name{
-    margin: 0 0 0 15px;
+    margin: 0 0 -8px 15px;
     font-size: 22px;
     color: #A7A7A7;
 }
@@ -130,7 +131,7 @@ a {
 }
 
 .flex-elementSticker .price span{
-    margin: 5px 0 0 20px;
+    margin: 2px 0 0 22px;
 }
 
 span {
@@ -173,6 +174,7 @@ footer {
 }
 
 .flex-container4 .flex-element {
+    font-family: Arial;
     margin: 30px 100px;
     width: 300px;
 }
@@ -192,7 +194,20 @@ footer {
     height: auto;
 }
 
+/*------------------------CUSTOM FONT----------------------*/
+.NWfont{
+    font-family: "Noteworthy";
+}
 
+
+@font-face {
+    font-family: "Noteworthy";
+    src: url("../../Noteworthy-Lt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*------------------------Адаптация под телы------------------*/
 @media (min-width:900px) and (max-width:1300px) {
     #copyright{
         font-size: 25px;
