@@ -337,7 +337,7 @@ label, a{ /*при наведении на стрелки или переклю�
     margin-top: 25px;
     width: 180px;
     height: 230px;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: white;
 }
 

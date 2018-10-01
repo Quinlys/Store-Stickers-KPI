@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #9c9c9c;
+    color: white;
+}
+
+header {
+    background-color: #3c3c3c;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ------------------------- HEADER -------------------------*/
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 10px 0 10px 100px;
+    width: 85px;
+    float: left;
+}
+
+#basket {
+    margin: 10px 100px 0 0;
+    width: 65px;
+}
+
+#basketText {
+    margin: 0 0 10px 2px;
+}
+
+
+
+/* ------------------------- BODY -------------------------*/
+.flex-container2 {
+    margin: 2em 0 0 12em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.flex-container2 #flex-element1{
+    margin: 1em 0 0 0;
+}
+
+.flex-container2 .flex-element2{
+    margin: 2em 0 5em 0;
+    background: white;
+    width: 972px;
+    height: 473px;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-element2 #header {
+    color: #938E8E;
+    margin: 2.5em 0 0 2em;
+}
+
+.flex-container2 .flex-element3{
+    margin: 4em 0 0 13em;
+    width: 330px;
+    height: 245px;
+    background: #9c9c9c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.flex-element3 .text1{
+    margin: 1.5em 0 0 20px;
+
+}
+
+.flex-element3 .text2{
+    margin: 1.5em;
+}
+
+
+
+.flex-element3 button{
+    margin: 0 10px 0 0;
+    width: 100px;
+    height: 40px;
+    color: #717171;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ------------------------- FOOTER -------------------------*/
+footer {
+    height: 80px;
+    background-color: #2d2d2d;
+}
+
+#copyright {
+
+}
+
+.flex-container4 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.flex-container4 .flex-element {
+    margin: 30px 100px;
+    width: 300px;
+}
+
+#contact {
+    float: left;
+}
+
+.flex-container4 .flex-element h4{
+    margin: 0 0 0 0;
+}
+
+#telegramIcon {
+    margin-left: 25px;
+    border-radius: 5px;
+    width: 20px;
+    height: auto;
+}
+
+
