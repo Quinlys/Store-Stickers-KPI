@@ -1,6 +1,6 @@
 
 .level-one {
-    display: none;
+    display: block;
 }
 
 
@@ -265,4 +265,17 @@ h1, p {
     border-radius: 15px;
     height: 50px;
     width: 160px;
+}
+
+
+.NWfont{
+    font-family: "Noteworthy";
+}
+
+
+@font-face {
+    font-family: "Noteworthy";
+    src: url("../../Noteworthy-Lt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
