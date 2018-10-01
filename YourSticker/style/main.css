@@ -1,8 +1,4 @@
 
-
-.NWfont{
-    font-family: "Noteworthy";
-}
 body {
     margin: 0;
     padding: 0;
@@ -203,6 +199,10 @@ h1, p {
 /* The end */
 
 /* Second Level */
+.NWfont{
+    font-family: "Noteworthy";
+}
+
 
 @font-face {
 font-family: "Noteworthy";
