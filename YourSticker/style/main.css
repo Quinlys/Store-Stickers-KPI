@@ -1,4 +1,9 @@
 
+.level-one {
+    display: none;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -37,7 +42,7 @@ header {
     margin: 0 0 10px 2px;
 }
 
-.level-one {
+.level-one, .level-two, .level-three {
     margin: 0 22%;
 }
 
@@ -105,7 +110,6 @@ h1, p {
     margin: 0 auto 25px auto;
     width: 350px;
     height: 350px;
-
 }
 
 #cube-loader {
@@ -199,3 +203,66 @@ h1, p {
 /* The end */
 
 /* Second Level */
+
+
+.stickerPlace {
+    margin: 0 auto 25px auto;
+    width: 350px;
+    height: 350px;
+}
+
+.stickerPlace img {
+    width: 350px;
+    height: 350px;
+}
+
+.info-block {
+    background-color: white;
+    width: 50%;
+    margin: 15px 45% 15px 5%;
+    border-radius: 0 30px 0px 30px;
+}
+
+.info-block h5 {
+    margin: 15px 25px;
+}
+
+.info-block textarea {
+    border-radius: 10px;
+    margin-left: 25px;
+    width: 200px;
+    height: 75px;
+}
+
+/* Адаптация инпутов */
+
+#stickerWidth input {
+    margin-left: 10px;
+
+}
+
+#stickerHeight input {
+    margin-left: 14px;
+}
+
+#stickerQuantity input {
+
+}
+
+#yourEmail input {
+
+}
+
+
+
+/* Конец адаптации для инпутов */
+
+#send {
+    margin: 0 5% 5% 75%;
+    font-size: 18px;
+    color: #E3E3E3;
+    background-color: #4D4D4D;
+    border-radius: 15px;
+    height: 50px;
+    width: 160px;
+}
