@@ -4,7 +4,7 @@
 }
 
 .level-two {
-    display: none;
+    display: block;
 }
 
 .level-three {
@@ -233,36 +233,98 @@ h1, p {
     border-radius: 0 30px 0px 30px;
 }
 
+.info-block p {
+    width: 80px;
+    float: left;
+    margin: 0 0 0 25px;
+}
+
 .info-block h5 {
-    margin: 15px 25px;
+    margin: 0 0 10px 25px;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+.info {
+    height: 30px;
+    display: flex;
 }
 
 .info-block textarea {
     border-radius: 10px;
-    margin-left: 25px;
     width: 200px;
     height: 75px;
+    margin: 15px 0 0 25px;
+}
+
+#yourEmail {
+    width: 180px;
+    padding-bottom: 25px;
+}
+
+#emailInput {
+width: 100px;
 }
 
 /* Адаптация инпутов */
 
-#stickerWidth input {
-    margin-left: 10px;
-
+/* form starting stylings ------------------------------- */
+.group {
+    width: 20px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-#stickerHeight input {
-    margin-left: 14px;
+input {
+    font-size: 16px;
+    padding: 3px 5px 3px 3px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+input:focus {
+    outline: none;
 }
 
-#stickerQuantity input {
-    margin-left: 3px;
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 20%;
 }
 
-#yourEmail input {
-
+#emailInput .bar:before {
+    left: 20%;
+}
+#emailInput .bar:after {
+    right: 5%;
 }
 
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 100%;
+}
 
 
 /* Конец адаптации для инпутов */

@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <button id="upload" class="NWfont" onclick="nextLevel()">Загрузити стікер</button>
+        <button id="upload" class="NWfont">Загрузити стікер</button>
 </div>
 <div class="level-two NWfont">
         <h1>Create your sticker!</h1>
@@ -48,22 +48,40 @@
             <img src="./img/stickerPanda.png" alt="">
         </div>
         <form class="info-block">
-            <h5>Розміри стікера в сантиметрах</h5>
-            <h5 id="stickerHeight">Висота :
-                <input type="text">
-            </h5>
-            <h5 id="stickerWidth">Ширина :
-                <input type="text">
-            </h5>
-            <h5 id="stickerQuantity">Кількість :
-                <input type="text">
-            </h5>
+            <h5 >Розміри стікера в сантиметрах</h5>
+            <div class="info">
+                <p>Висота :</p>
+                <div class="group">
+                    <input type="text" required>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
+            <div class="info">
+            <p>Ширина :</p>
+            <div class="group">
+                <input type="text" required>
+                <span class="bar"></span>
+            </div>
+            </div>
+
+            <div class="info">
+            <p>Кількість :</p>
+            <div class="group">
+                <input type="text" required>
+                <span class="bar"></span>
+            </div>
+            </div>
+
             <textarea class="NWfont" name="comment">Ваші побажання...</textarea>
-            <h5 id="yourEmail">Ваша електронна адреса :
-                <input id="email" type="text" class="valid" data-toggle="tooltip" data-placement="top" required>
-                <span class="highlight"></span>
-                <span class="bar" id="barEmail"></span>
-            </h5>
+            <div style="padding-bottom: 25px" class="info">
+            <p id="yourEmail">Ваша електронна адреса :
+            </p>
+            <div class="group" id="emailInput">
+                <input type="text" required>
+                <span class="bar"></span>
+            </div>
+            </div>
         </form>
         <button id="send" class="NWfont">Відправити на модерацію</button>
         <p>
