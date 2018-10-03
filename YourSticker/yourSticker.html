@@ -60,12 +60,14 @@
             <h5 id="stickerQuantity">Кількість :
                 <input type="text">
             </h5>
-            <textarea name="comment">Ваші побажання...</textarea>
+            <textarea class="NWfont" name="comment">Ваші побажання...</textarea>
             <h5 id="yourEmail">Ваша електронна адреса :
-                <input type="text">
+                <input id="email" type="text" class="valid" data-toggle="tooltip" data-placement="top" required>
+                <span class="highlight"></span>
+                <span class="bar" id="barEmail"></span>
             </h5>
         </form>
-        <button id="send">Відправити на модерацію</button>
+        <button id="send" class="NWfont">Відправити на модерацію</button>
         <p>
             Після проходження модерації на Вашу електронну адресу поступить повідомлення з приблизною <br/>
             вартістю загруженого стікера. Процес модерації може зайняти до 24-х годин.

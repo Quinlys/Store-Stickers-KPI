@@ -247,7 +247,7 @@ h1, p {
 }
 
 #stickerQuantity input {
-
+    margin-left: 3px;
 }
 
 #yourEmail input {
