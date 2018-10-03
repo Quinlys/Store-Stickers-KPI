@@ -17,8 +17,8 @@
         <h3 id="basketText" >Кошик</h3>
     </div>
 </header>
-<div class="level-one">
-    <div class="flex-container">
+<div class="flex-container">
+<div class="level-one" style="display: block">
         <h1 class="NWfont">Create your sticker!</h1>
         <p class="NWfont" >
             На нашому сайті ви зможете зробити свій власний стікер! <br/>
@@ -36,11 +36,9 @@
                 </div>
             </div>
         </div>
-        <button id="upload" class="NWfont">Загрузити стікер</button>
-    </div>
+        <button id="upload" class="NWfont" onclick="nextLevel()">Загрузити стікер</button>
 </div>
 <div class="level-two NWfont">
-    <div class="flex-container">
         <h1>Create your sticker!</h1>
         <p>
             На нашому сайті ви зможете зробити свій власний стікер! <br/>
@@ -72,10 +70,9 @@
             Після проходження модерації на Вашу електронну адресу поступить повідомлення з приблизною <br/>
             вартістю загруженого стікера. Процес модерації може зайняти до 24-х годин.
         </p>
-    </div>
 </div>
 <div class="level-three">
-    <div class="flex-container">
+
         <div class="check">
             <h1 class=" NWfont">Дякуємо за замовлення!</h1>
             <img src="./img/checked.png" alt="">
@@ -89,7 +86,8 @@
             Після проходження модерації на Вашу електронну адресу поступить повідомлення з приблизною вартістю <br/>
             загруженого стікера. Процес модерації може зайняти до 24-х годин.
         </p>
-    </div>
+
+</div>
 </div>
 <footer>
     <div class="flex-element" id="copyright">
@@ -99,5 +97,8 @@
         <h4 id="contact">Контактні дані:</h4> <a href="#"><img src="../img/telegramIcon.png" alt="" id="telegramIcon"></a>
     </div>
 </footer>
+
+
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

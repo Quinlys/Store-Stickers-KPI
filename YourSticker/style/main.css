@@ -3,6 +3,15 @@
     display: block;
 }
 
+.level-two {
+    display: none;
+}
+
+.level-three {
+    display: block;
+}
+
+
 
 body {
     margin: 0;
@@ -42,9 +51,9 @@ header {
     margin: 0 0 10px 2px;
 }
 
-.level-one, .level-two, .level-three {
-    margin: 0 22%;
-}
+/*.level-one, .level-two, .level-three {*/
+    /*margin: 0 22%;*/
+/*}*/
 
 /* Стили для футера */
 
@@ -89,11 +98,11 @@ h4 {
 /* First Level */
 
 .flex-container {
-    margin: 8% 0;
+    margin: 3% 25%;
     border-radius: 20px;
     background-color: #e3e3e3;
     color: #4b4b4b;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
